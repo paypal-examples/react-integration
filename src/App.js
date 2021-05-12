@@ -1,24 +1,23 @@
+import { PayPalScriptProvider } from '@paypal/react-paypal-js';
 import logo from './logo.svg';
 import './App.css';
+import Checkout from './Checkout';
 
 function App() {
+  const CLIENT_ID = 'test';
+
   return (
+    <PayPalScriptProvider options={{ "client-id": CLIENT_ID }}>
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Buy an atom!
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <Checkout />
       </header>
     </div>
+    </PayPalScriptProvider>
   );
 }
 
