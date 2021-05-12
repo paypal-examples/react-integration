@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# React App PayPal Integration
 
 A sample app demonstrating the use of [react-paypal-js](https://github.com/paypal/react-paypal-js) to add PayPal buttons to a basic React app.
 
