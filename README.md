@@ -26,10 +26,9 @@ Navigate to [localhost:3000](http://localhost:3000). You should see the app runn
 
 ## How It Works
 
-1. Install react-paypal-js by running `npm install @paypal/react-paypal-js`
-2. Add `<script src="https://www.paypal.com/sdk/js?client-id=test"></script>` to _public/index.html_, replacing "test" with your own client ID.
-3. At the top of the checkout component, _src/Checkout.js_, pull in the React driver `const PayPalButton = window.paypal.Buttons.driver("react", { React, ReactDOM });`
-4. Style, payment, and other options are specified on the `<PayPalButton/>` tag.
+1. Add `<script src="https://www.paypal.com/sdk/js?client-id=test"></script>` to _public/index.html_, replacing "test" with your own client ID.
+2. At the top of the checkout component, _src/Checkout.js_, pull in the React driver `const PayPalButton = window.paypal.Buttons.driver("react", { React, ReactDOM });`
+3. Style, payment, and other options are specified on the `<PayPalButton/>` tag.
 
 ## Further help
 
