@@ -1,10 +1,10 @@
 # React App PayPal Integration
 
-A sample app demonstrating the use of [react-paypal-js](https://github.com/paypal/react-paypal-js) to add PayPal buttons to a basic React app.
+A sample app demonstrating the use of the Smart Payment Buttons React driver to add PayPal buttons to a basic React app.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Get started
+## Get Started
 
 Install the dependencies...
 
@@ -23,6 +23,13 @@ npm install
 npm run start
 ```
 Navigate to [localhost:3000](http://localhost:3000). You should see the app running.
+
+## How It Works
+
+1. Install react-paypal-js by running `npm install @paypal/react-paypal-js`
+2. Add `<script src="https://www.paypal.com/sdk/js?client-id=test"></script>` to _public/index.html_, replacing "test" with your own client ID.
+3. At the top of the checkout component, _src/Checkout.js_, pull in the React driver `const PayPalButton = window.paypal.Buttons.driver("react", { React, ReactDOM });`
+4. Style, payment, and other options are specified on the `<PayPalButton/>` tag.
 
 ## Further help
 
