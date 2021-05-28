@@ -4,7 +4,7 @@ A sample app demonstrating the use of [react-paypal-js](https://github.com/paypa
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Get started
+## Get Started
 
 Install the dependencies...
 
@@ -23,6 +23,12 @@ npm install
 npm run start
 ```
 Navigate to [localhost:3000](http://localhost:3000). You should see the app running.
+
+## How It Works
+
+1. Install react-paypal-js by running `npm install @paypal/react-paypal-js`
+2. Import `PayPalScriptProvider` into _src/App.js_ and wrap the main app component with the `<PayPalScriptProvider options={{ "client-id": CLIENT_ID }}>` tag.
+3. Import `PayPalButtons` into _src/Checkout.js_ and include style, payment, and other desired props on `<PayPalButton/>`
 
 ## Further help
 
