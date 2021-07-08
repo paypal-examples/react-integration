@@ -7,7 +7,7 @@ function App() {
   const CLIENT_ID = 'test';
 
   return (
-    <PayPalScriptProvider options={{ "client-id": CLIENT_ID }}>
+    <PayPalScriptProvider deferLoading={true} options={{ "client-id": CLIENT_ID }}>
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
