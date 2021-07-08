@@ -1425,6 +1425,30 @@
     mkdirp "^1.0.4"
     rimraf "^3.0.2"
 
+"@paypal/paypal-js@^4.0.2":
+  version "4.0.2"
+  resolved "https://artifactory.paypalcorp.com/artifactory/api/npm/npm-all/@paypal/paypal-js/-/paypal-js-4.0.2.tgz#1d3fa97c63d0580334662a6b8b3a7aab36ea0f8a"
+  integrity sha1-HT+pfGPQWAM0Ziprizp6qzbqD4o=
+  dependencies:
+    promise-polyfill "^8.2.0"
+
+"@paypal/react-paypal-js@^7.1.2":
+  version "7.1.2"
+  resolved "https://artifactory.paypalcorp.com/artifactory/api/npm/npm-all/@paypal/react-paypal-js/-/react-paypal-js-7.1.2.tgz#0228739e97bfbd582266959dc2384003ebbf335c"
+  integrity sha1-Aihznpe/vVgiZpWdwjhAA+u/M1w=
+  dependencies:
+    "@paypal/paypal-js" "^4.0.2"
+    "@paypal/sdk-constants" "^1.0.107"
+
+"@paypal/sdk-constants@^1.0.107":
+  version "1.0.107"
+  resolved "https://artifactory.paypalcorp.com/artifactory/api/npm/npm-all/@paypal/sdk-constants/-/sdk-constants-1.0.107.tgz#d204330aba1aedc86f917672326e52901479bd2e"
+  integrity sha1-0gQzCroa7chvkXZyMm5SkBR5vS4=
+  dependencies:
+    cross-domain-utils "^2.0.10"
+    hi-base32 "^0.5.0"
+    zalgo-promise "^1.0.28"
+
 "@pmmmwh/react-refresh-webpack-plugin@0.4.3":
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/@pmmmwh/react-refresh-webpack-plugin/-/react-refresh-webpack-plugin-0.4.3.tgz#1eec460596d200c0236bf195b078a5d1df89b766"
@@ -3557,6 +3581,13 @@ create-hmac@^1.1.0, create-hmac@^1.1.4, create-hmac@^1.1.7:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
+cross-domain-utils@^2.0.10:
+  version "2.0.34"
+  resolved "https://artifactory.paypalcorp.com/artifactory/api/npm/npm-all/cross-domain-utils/-/cross-domain-utils-2.0.34.tgz#3f8dc8d82a5434213787433f17b76f51c316e382"
+  integrity sha1-P43I2CpUNCE3h0M/F7dvUcMW44I=
+  dependencies:
+    zalgo-promise "^1.0.11"
+
 cross-spawn@7.0.3, cross-spawn@^7.0.0, cross-spawn@^7.0.2:
   version "7.0.3"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-7.0.3.tgz#f73a85b9d5d41d045551c177e2882d4ac85728a6"
@@ -5393,6 +5424,11 @@ hex-color-regex@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/hex-color-regex/-/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
   integrity sha512-l9sfDFsuqtOqKDsQdqrMRk0U85RZc0RtOR9yPI7mRVOa4FsR/BVnZ0shmQRM96Ji99kYZP/7hn1cedc1+ApsTQ==
+
+hi-base32@^0.5.0:
+  version "0.5.1"
+  resolved "https://artifactory.paypalcorp.com/artifactory/api/npm/npm-all/hi-base32/-/hi-base32-0.5.1.tgz#1279f2ddae2673219ea5870c2121d2a33132857e"
+  integrity sha1-Enny3a4mcyGepYcMISHSozEyhX4=
 
 hmac-drbg@^1.0.1:
   version "1.0.1"
@@ -8724,6 +8760,11 @@ promise-inflight@^1.0.1:
   resolved "https://registry.yarnpkg.com/promise-inflight/-/promise-inflight-1.0.1.tgz#98472870bf228132fcbdd868129bad12c3c029e3"
   integrity sha1-mEcocL8igTL8vdhoEputEsPAKeM=
 
+promise-polyfill@^8.2.0:
+  version "8.2.0"
+  resolved "https://artifactory.paypalcorp.com/artifactory/api/npm/npm-all/promise-polyfill/-/promise-polyfill-8.2.0.tgz#367394726da7561457aba2133c9ceefbd6267da0"
+  integrity sha1-NnOUcm2nVhRXq6ITPJzu+9YmfaA=
+
 promise@^8.1.0:
   version "8.1.0"
   resolved "https://registry.yarnpkg.com/promise/-/promise-8.1.0.tgz#697c25c3dfe7435dd79fcd58c38a135888eaf05e"
@@ -11404,3 +11445,8 @@ yocto-queue@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
   integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
+
+zalgo-promise@^1.0.11, zalgo-promise@^1.0.28:
+  version "1.0.46"
+  resolved "https://artifactory.paypalcorp.com/artifactory/api/npm/npm-all/zalgo-promise/-/zalgo-promise-1.0.46.tgz#325988d75d0be4cd63a266bad5e18f8f6cd85675"
+  integrity sha1-MlmI110L5M1joma61eGPj2zYVnU=
