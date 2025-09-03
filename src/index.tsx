@@ -4,14 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const root = document.getElementById('root');
+const rootElement = document.getElementById('root');
 
-if (root) {
-  ReactDOM.render(
+if (rootElement) {
+  (ReactDOM as any).render(
     <React.StrictMode>
       <App />
     </React.StrictMode>,
-    root
+    rootElement
   );
 }
 
