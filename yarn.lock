@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@adobe/css-tools@^4.0.1":
+  version "4.4.4"
+  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@adobe/css-tools/-/css-tools-4.4.4.tgz"
+  integrity sha512-Elp+iwUx5rN5+Y8xLt5/GRoG20WGoDCQ/1Fb+1LiGtvwbDavuSk0jhD/eZdckHAuzcDzccnkv+rEjyWfRx18gg==
+
 "@alloc/quick-lru@^5.2.0":
   version "5.2.0"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@alloc/quick-lru/-/quick-lru-5.2.0.tgz"
@@ -1032,15 +1037,7 @@
     "@babel/helper-validator-option" "^7.16.7"
     "@babel/plugin-transform-typescript" "^7.16.7"
 
-"@babel/runtime-corejs3@^7.10.2":
-  version "7.17.2"
-  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@babel/runtime-corejs3/-/runtime-corejs3-7.17.2.tgz"
-  integrity sha1-/cos0F+6YziLq+hdNJtoAbAI/RM=
-  dependencies:
-    core-js-pure "^3.20.2"
-    regenerator-runtime "^0.13.4"
-
-"@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.16.3", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.16.3", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
   version "7.17.2"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@babel/runtime/-/runtime-7.17.2.tgz"
   integrity sha1-ZvaFkWBeWdpHUjxjFBaxhQh3mUE=
@@ -1459,17 +1456,6 @@
     source-map "^0.6.1"
     write-file-atomic "^3.0.0"
 
-"@jest/types@^26.6.2":
-  version "26.6.2"
-  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@jest/types/-/types-26.6.2.tgz"
-  integrity sha1-vvWlMgMOHYii9abZM/hOlyJu1I4=
-  dependencies:
-    "@types/istanbul-lib-coverage" "^2.0.0"
-    "@types/istanbul-reports" "^3.0.0"
-    "@types/node" "*"
-    "@types/yargs" "^15.0.0"
-    chalk "^4.0.0"
-
 "@jest/types@^27.5.1":
   version "27.5.1"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@jest/types/-/types-27.5.1.tgz"
@@ -1560,29 +1546,12 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@paypal/paypal-js@^5.0.2":
-  version "5.0.2"
-  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@paypal/paypal-js/-/paypal-js-5.0.2.tgz"
-  integrity sha1-vwfXrj85cHD2e0cnmCNlpE+qg24=
+"@paypal/react-paypal-js@file:../paypal-js/packages/react-paypal-js":
+  version "8.9.1"
+  resolved "file:../paypal-js/packages/react-paypal-js"
   dependencies:
-    promise-polyfill "^8.2.1"
-
-"@paypal/react-paypal-js@^7.6.0":
-  version "7.6.0"
-  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@paypal/react-paypal-js/-/react-paypal-js-7.6.0.tgz"
-  integrity sha1-QWFzkmPa9y9kbIfRLCIlz1DHbxM=
-  dependencies:
-    "@paypal/paypal-js" "^5.0.2"
-    "@paypal/sdk-constants" "^1.0.116"
-
-"@paypal/sdk-constants@^1.0.116":
-  version "1.0.116"
-  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@paypal/sdk-constants/-/sdk-constants-1.0.116.tgz"
-  integrity sha1-Aa+2mrKQyasADWYBDurOFiD2ZXc=
-  dependencies:
-    cross-domain-utils "^2.0.10"
-    hi-base32 "^0.5.0"
-    zalgo-promise "^1.0.28"
+    "@paypal/paypal-js" "^8.4.0"
+    "@paypal/sdk-constants" "^1.0.122"
 
 "@pkgjs/parseargs@^0.11.0":
   version "0.11.0"
@@ -1781,48 +1750,62 @@
     "@svgr/plugin-svgo" "^5.5.0"
     loader-utils "^2.0.0"
 
-"@testing-library/dom@^7.28.1", "@testing-library/dom@>=7.21.4":
-  version "7.31.0"
-  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@testing-library/dom/-/dom-7.31.0.tgz"
-  integrity sha1-k4RRq9PKJ+G2m7OV1KQHWf1/Wzs=
+"@testing-library/dom@^8.5.0":
+  version "8.20.1"
+  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@testing-library/dom/-/dom-8.20.1.tgz"
+  integrity sha512-/DiOQ5xBxgdYRC8LNk7U+RWat0S3qRLeIw3ZIkMQ9kkVlRmwD/Eg8k8CqIpD6GW7u20JIUOfMKbxtiLutpjQ4g==
   dependencies:
     "@babel/code-frame" "^7.10.4"
     "@babel/runtime" "^7.12.5"
-    "@types/aria-query" "^4.2.0"
-    aria-query "^4.2.2"
+    "@types/aria-query" "^5.0.1"
+    aria-query "5.1.3"
     chalk "^4.1.0"
-    dom-accessibility-api "^0.5.4"
-    lz-string "^1.4.4"
-    pretty-format "^26.6.2"
+    dom-accessibility-api "^0.5.9"
+    lz-string "^1.5.0"
+    pretty-format "^27.0.2"
 
-"@testing-library/jest-dom@^5.11.4":
-  version "5.12.0"
-  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@testing-library/jest-dom/-/jest-dom-5.12.0.tgz"
-  integrity sha1-al00CwksRLe84XpHkbR9m8LGFEM=
+"@testing-library/dom@>=7.21.4":
+  version "10.4.1"
+  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@testing-library/dom/-/dom-10.4.1.tgz"
+  integrity sha512-o4PXJQidqJl82ckFaXUeoAW+XysPLauYI43Abki5hABd853iMhitooc6znOnczgbTYmEP6U6/y1ZyKAIsvMKGg==
   dependencies:
+    "@babel/code-frame" "^7.10.4"
+    "@babel/runtime" "^7.12.5"
+    "@types/aria-query" "^5.0.1"
+    aria-query "5.3.0"
+    dom-accessibility-api "^0.5.9"
+    lz-string "^1.5.0"
+    picocolors "1.1.1"
+    pretty-format "^27.0.2"
+
+"@testing-library/jest-dom@^5.16.5":
+  version "5.17.0"
+  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@testing-library/jest-dom/-/jest-dom-5.17.0.tgz"
+  integrity sha512-ynmNeT7asXyH3aSVv4vvX4Rb+0qjOhdNHnO/3vuZNqPmhDpV/+rCSGwQ7bLcmU2cJ4dvoheIO85LQj0IbJHEtg==
+  dependencies:
+    "@adobe/css-tools" "^4.0.1"
     "@babel/runtime" "^7.9.2"
     "@types/testing-library__jest-dom" "^5.9.1"
-    aria-query "^4.2.2"
+    aria-query "^5.0.0"
     chalk "^3.0.0"
-    css "^3.0.0"
     css.escape "^1.5.1"
+    dom-accessibility-api "^0.5.6"
     lodash "^4.17.15"
     redent "^3.0.0"
 
-"@testing-library/react@^11.1.0":
-  version "11.2.6"
-  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@testing-library/react/-/react-11.2.6.tgz"
-  integrity sha1-WGojrcY2FZhdhb4MkD83TasZIAs=
+"@testing-library/react@^13.4.0":
+  version "13.4.0"
+  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@testing-library/react/-/react-13.4.0.tgz"
+  integrity sha512-sXOGON+WNTh3MLE9rve97ftaZukN3oNf2KjDy7YTx6hcTO2uuLHuCGynMDhFwGw/jYf4OJ2Qk0i4i79qMNNkyw==
   dependencies:
     "@babel/runtime" "^7.12.5"
-    "@testing-library/dom" "^7.28.1"
+    "@testing-library/dom" "^8.5.0"
+    "@types/react-dom" "^18.0.0"
 
-"@testing-library/user-event@^12.1.10":
-  version "12.8.3"
-  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@testing-library/user-event/-/user-event-12.8.3.tgz"
-  integrity sha1-GqPtS595NAoeGDa8f1fFAeg4cEo=
-  dependencies:
-    "@babel/runtime" "^7.12.5"
+"@testing-library/user-event@^14.5.2":
+  version "14.6.1"
+  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@testing-library/user-event/-/user-event-14.6.1.tgz"
+  integrity sha512-vq7fv0rnt+QTXgPxr5Hjc210p6YKq2kmdziLgnsZGgLJ9e6VAShx1pACLuRjd/AS/sr7phAR58OIIpf0LlmQNw==
 
 "@tootallnate/once@1":
   version "1.1.2"
@@ -1834,10 +1817,10 @@
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@trysound/sax/-/sax-0.2.0.tgz"
   integrity sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==
 
-"@types/aria-query@^4.2.0":
-  version "4.2.2"
-  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@types/aria-query/-/aria-query-4.2.2.tgz"
-  integrity sha1-7U4K2SMGpwT5+xMqDPz3dIbb4rw=
+"@types/aria-query@^5.0.1":
+  version "5.0.4"
+  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@types/aria-query/-/aria-query-5.0.4.tgz"
+  integrity sha512-rfT93uj5s0PRL7EzccGMs3brplhcrghnDoV26NqKhCAS1hVo+WdNsPvE/yb6ilfr5hi2MEk6d5EWJTKdxg8jVw==
 
 "@types/babel__core@^7.0.0", "@types/babel__core@^7.1.14", "@types/babel__core@^7.1.9":
   version "7.20.5"
@@ -2046,6 +2029,11 @@
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@types/prettier/-/prettier-2.7.3.tgz"
   integrity sha512-+68kP9yzs4LMp7VNh8gdzMSPZFL44MLGqiHWvttYJe+6qnuVr4Ek9wSBQoveqY/r+LwjCcU29kNVkidwim+kYA==
 
+"@types/prop-types@*":
+  version "15.7.15"
+  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@types/prop-types/-/prop-types-15.7.15.tgz"
+  integrity sha512-F6bEyamV9jKGAFBEmlQnesRPGOQqS2+Uwi0Em15xenOxHaf2hv6L8YCVn3rPdPJOiJfPiCnLIRyvwVaqMY3MIw==
+
 "@types/q@^1.5.1":
   version "1.5.5"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@types/q/-/q-1.5.5.tgz"
@@ -2061,16 +2049,17 @@
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@types/range-parser/-/range-parser-1.2.7.tgz"
   integrity sha512-hKormJbkJqzQGhziax5PItDUTMAM9uE2XXQmM37dyd4hVM+5aVl7oVxMVUiVQn2oCQFN/LKCZdvSM0pFRqbSmQ==
 
-"@types/react-dom@^19.1.9":
-  version "19.1.9"
-  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@types/react-dom/-/react-dom-19.1.9.tgz"
-  integrity sha512-qXRuZaOsAdXKFyOhRBg6Lqqc0yay13vN7KrIg4L7N4aaHN68ma9OK3NE1BoDFgFOTfM7zg+3/8+2n8rLUH3OKQ==
+"@types/react-dom@^18.0.0", "@types/react-dom@^18.2.25":
+  version "18.3.7"
+  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@types/react-dom/-/react-dom-18.3.7.tgz"
+  integrity sha512-MEe3UeoENYVFXzoXEWsvcpg6ZvlrFNlOQ7EOsvhI3CfAXwzPfO8Qwuxd40nepsYKqyyVQnTdEfv68q91yLcKrQ==
 
-"@types/react@^19.0.0", "@types/react@^19.1.12":
-  version "19.1.12"
-  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@types/react/-/react-19.1.12.tgz"
-  integrity sha512-cMoR+FoAf/Jyq6+Df2/Z41jISvGZZ2eTlnsaJRptmZ76Caldwy1odD4xTr/gNV9VLj0AWgg/nmkevIyUfIIq5w==
+"@types/react@^18.0.0", "@types/react@^18.2.79":
+  version "18.3.24"
+  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@types/react/-/react-18.3.24.tgz"
+  integrity sha512-0dLEBsA1kI3OezMBF8nSsb7Nk19ZnsyE1LLhB8r27KbgU5H4pvuqZLdtE+aUkJVoXgTVuA+iLIwmZ0TuK4tx6A==
   dependencies:
+    "@types/prop-types" "*"
     csstype "^3.0.2"
 
 "@types/resolve@1.17.1":
@@ -2149,13 +2138,6 @@
   version "21.0.0"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@types/yargs-parser/-/yargs-parser-21.0.0.tgz"
   integrity sha1-DGDlN/p5D1+Ucu0ndsK3HsEXNRs=
-
-"@types/yargs@^15.0.0":
-  version "15.0.14"
-  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@types/yargs/-/yargs-15.0.14.tgz"
-  integrity sha1-Jtgh3biecEkhYLZtEKDrbfj2+wY=
-  dependencies:
-    "@types/yargs-parser" "*"
 
 "@types/yargs@^16.0.0":
   version "16.0.9"
@@ -2540,7 +2522,7 @@ ansi-html@^0.0.9:
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/ansi-html/-/ansi-html-0.0.9.tgz"
   integrity sha512-ozbS3LuenHVxNRh/wdnN16QapUHzauqSomAl1jwwJRRsGwFwtj644lIhxfWu0Fy0acCij2+AEgHvjscq3dlVXg==
 
-ansi-regex@^5.0.0, ansi-regex@^5.0.1:
+ansi-regex@^5.0.1:
   version "5.0.1"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/ansi-regex/-/ansi-regex-5.0.1.tgz"
   integrity sha1-CCyyyJyf6GWaMRpTvWpNxTAdswQ=
@@ -2604,20 +2586,26 @@ argparse@^2.0.1:
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/argparse/-/argparse-2.0.1.tgz"
   integrity sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==
 
-aria-query@^4.2.2:
-  version "4.2.2"
-  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/aria-query/-/aria-query-4.2.2.tgz"
-  integrity sha1-DSymyazrVriXfp/tau1+FbvS+Ds=
+aria-query@^5.0.0, aria-query@5.3.0:
+  version "5.3.0"
+  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/aria-query/-/aria-query-5.3.0.tgz"
+  integrity sha512-b0P0sZPKtyu8HkeRAfCq0IfURZK+SuwMjY1UXGBU27wpAiTwQAIlq56IbIO+ytk/JjS1fMR14ee5WBBfKi5J6A==
   dependencies:
-    "@babel/runtime" "^7.10.2"
-    "@babel/runtime-corejs3" "^7.10.2"
+    dequal "^2.0.3"
 
 aria-query@^5.3.2:
   version "5.3.2"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/aria-query/-/aria-query-5.3.2.tgz"
   integrity sha512-COROpnaoap1E2F000S62r6A60uHZnmlvomhfyT2DlTcrY1OrBKn2UhH7qn5wTC9zMvD0AY7csdPSNwKP+7WiQw==
 
-array-buffer-byte-length@^1.0.1, array-buffer-byte-length@^1.0.2:
+aria-query@5.1.3:
+  version "5.1.3"
+  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/aria-query/-/aria-query-5.1.3.tgz"
+  integrity sha512-R5iJ5lkuHybztUfuOAznmboyjWq8O6sqNqtK7CLOqdydi54VNbORp49mb14KbWgG1QD3JFO9hJdZ+y4KutfdOQ==
+  dependencies:
+    deep-equal "^2.0.5"
+
+array-buffer-byte-length@^1.0.0, array-buffer-byte-length@^1.0.1, array-buffer-byte-length@^1.0.2:
   version "1.0.2"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/array-buffer-byte-length/-/array-buffer-byte-length-1.0.2.tgz"
   integrity sha512-LHE+8BuR7RYGDKvnrmcuSq3tDcKv9OFEXQt/HpbZhY7V6h0zlUXutnAD82GiFx9rdieCMjkvtcsPqBwgUl1Iiw==
@@ -2747,11 +2735,6 @@ at-least-node@^1.0.0:
   version "1.0.0"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/at-least-node/-/at-least-node-1.0.0.tgz"
   integrity sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==
-
-atob@^2.1.2:
-  version "2.1.2"
-  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/atob/-/atob-2.1.2.tgz"
-  integrity sha1-bZUX654DDSQ2ZmZR6GvZ9vE1M8k=
 
 autoprefixer@^10.4.13:
   version "10.4.21"
@@ -3061,7 +3044,7 @@ call-bind-apply-helpers@^1.0.0, call-bind-apply-helpers@^1.0.1, call-bind-apply-
     es-errors "^1.3.0"
     function-bind "^1.1.2"
 
-call-bind@^1.0.2, call-bind@^1.0.7, call-bind@^1.0.8:
+call-bind@^1.0.2, call-bind@^1.0.5, call-bind@^1.0.7, call-bind@^1.0.8:
   version "1.0.8"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/call-bind/-/call-bind-1.0.8.tgz"
   integrity sha512-oKlSFMcMwpUg2ednkhQ454wfWiU/ul3CkJe/PEHcTKuiX6RpbehUiFMXu13HalGZxfUwCQzZG747YXBn1im9ww==
@@ -3144,7 +3127,23 @@ chalk@^3.0.0:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
-chalk@^4.0.0, chalk@^4.1.0, chalk@^4.1.2:
+chalk@^4.0.0:
+  version "4.1.2"
+  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/chalk/-/chalk-4.1.2.tgz"
+  integrity sha1-qsTit3NKdAhnrrFr8CqtVWoeegE=
+  dependencies:
+    ansi-styles "^4.1.0"
+    supports-color "^7.1.0"
+
+chalk@^4.1.0:
+  version "4.1.2"
+  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/chalk/-/chalk-4.1.2.tgz"
+  integrity sha1-qsTit3NKdAhnrrFr8CqtVWoeegE=
+  dependencies:
+    ansi-styles "^4.1.0"
+    supports-color "^7.1.0"
+
+chalk@^4.1.2:
   version "4.1.2"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/chalk/-/chalk-4.1.2.tgz"
   integrity sha1-qsTit3NKdAhnrrFr8CqtVWoeegE=
@@ -3393,7 +3392,7 @@ core-js-compat@^3.20.2, core-js-compat@^3.21.0:
     browserslist "^4.19.1"
     semver "7.0.0"
 
-core-js-pure@^3.20.2, core-js-pure@^3.23.3:
+core-js-pure@^3.23.3:
   version "3.45.1"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/core-js-pure/-/core-js-pure-3.45.1.tgz"
   integrity sha512-OHnWFKgTUshEU8MK+lOs1H8kC8GkTi9Z1tvNkxrCcw9wl3MJIO7q2ld77wjWn4/xuGrVu2X+nME1iIIPBSdyEQ==
@@ -3429,13 +3428,6 @@ cosmiconfig@^7.0.0:
     parse-json "^5.0.0"
     path-type "^4.0.0"
     yaml "^1.10.0"
-
-cross-domain-utils@^2.0.10:
-  version "2.0.38"
-  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/cross-domain-utils/-/cross-domain-utils-2.0.38.tgz"
-  integrity sha1-Lq8yHE39thWWgFykIz/eRADLY3c=
-  dependencies:
-    zalgo-promise "^1.0.11"
 
 cross-spawn@^7.0.2, cross-spawn@^7.0.3, cross-spawn@^7.0.6:
   version "7.0.6"
@@ -3530,7 +3522,7 @@ css-select@^4.1.3:
 css-tree@^1.1.2:
   version "1.1.3"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/css-tree/-/css-tree-1.1.3.tgz"
-  integrity sha1-60hw+2/XcHMn7JXC/yqwm16NuR0=
+  integrity sha512-tRpdppF7TRazZrjJ6v3stzv93qxRcSsFmW6cX0Zm2NVKpxE1WV1HblnghVv9TreireHkqI/VDEsfolRF1p6y7Q==
   dependencies:
     mdn-data "2.0.14"
     source-map "^0.6.1"
@@ -3565,15 +3557,6 @@ css.escape@^1.5.1:
   version "1.5.1"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/css.escape/-/css.escape-1.5.1.tgz"
   integrity sha1-QuJ9T6BK4y+TGktNQZH6nN3ul8s=
-
-css@^3.0.0:
-  version "3.0.0"
-  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/css/-/css-3.0.0.tgz"
-  integrity sha1-REek1Y/dAzZ8UWyp9krjZc7kql0=
-  dependencies:
-    inherits "^2.0.4"
-    source-map "^0.6.1"
-    source-map-resolve "^0.6.0"
 
 cssdb@^7.1.0:
   version "7.11.2"
@@ -3744,15 +3727,34 @@ decimal.js@^10.2.1:
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/decimal.js/-/decimal.js-10.6.0.tgz"
   integrity sha512-YpgQiITW3JXGntzdUmyUR1V812Hn8T1YVXhCu+wO3OpS4eU9l4YdD3qjyiKdV6mvV29zapkMeD390UVEf2lkUg==
 
-decode-uri-component@^0.2.0:
-  version "0.2.0"
-  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/decode-uri-component/-/decode-uri-component-0.2.0.tgz"
-  integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
-
 dedent@^0.7.0:
   version "0.7.0"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/dedent/-/dedent-0.7.0.tgz"
   integrity sha512-Q6fKUPqnAHAyhiUgFU7BUzLiv0kd8saH9al7tnu5Q/okj6dnupxyTgFIBjVzJATdfIAm9NAsvXNzjaKa+bxVyA==
+
+deep-equal@^2.0.5:
+  version "2.2.3"
+  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/deep-equal/-/deep-equal-2.2.3.tgz"
+  integrity sha512-ZIwpnevOurS8bpT4192sqAowWM76JDKSHYzMLty3BZGSswgq6pBaH3DhCSW5xVAZICZyKdOBPjwww5wfgT/6PA==
+  dependencies:
+    array-buffer-byte-length "^1.0.0"
+    call-bind "^1.0.5"
+    es-get-iterator "^1.1.3"
+    get-intrinsic "^1.2.2"
+    is-arguments "^1.1.1"
+    is-array-buffer "^3.0.2"
+    is-date-object "^1.0.5"
+    is-regex "^1.1.4"
+    is-shared-array-buffer "^1.0.2"
+    isarray "^2.0.5"
+    object-is "^1.1.5"
+    object-keys "^1.1.1"
+    object.assign "^4.1.4"
+    regexp.prototype.flags "^1.5.1"
+    side-channel "^1.0.4"
+    which-boxed-primitive "^1.0.2"
+    which-collection "^1.0.1"
+    which-typed-array "^1.1.13"
 
 deep-is@^0.1.3:
   version "0.1.4"
@@ -3808,6 +3810,11 @@ depd@2.0.0:
   version "2.0.0"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/depd/-/depd-2.0.0.tgz"
   integrity sha512-g7nH6P6dyDioJogAAGprGpCtVImJhpPk/roCzdb3fIh61/s/nPsfR6onyMwkCAR/OlC3yBC0lESvUoQEAssIrw==
+
+dequal@^2.0.3:
+  version "2.0.3"
+  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/dequal/-/dequal-2.0.3.tgz"
+  integrity sha512-0je+qPKHEMohvfRTCEo3CrPG6cAzAYgmzKyxRiYSSDkS6eGJdyVJm7WaYA5ECaAD9wLB2T4EEeymA5aFVcYXCA==
 
 destroy@1.2.0:
   version "1.2.0"
@@ -3875,7 +3882,7 @@ doctrine@^3.0.0:
   dependencies:
     esutils "^2.0.2"
 
-dom-accessibility-api@^0.5.4:
+dom-accessibility-api@^0.5.6, dom-accessibility-api@^0.5.9:
   version "0.5.13"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/dom-accessibility-api/-/dom-accessibility-api-0.5.13.tgz"
   integrity sha1-EC7l8l6szgm98c+lopj4baRzvks=
@@ -3904,12 +3911,7 @@ dom-serializer@0:
     domelementtype "^2.0.1"
     entities "^2.0.0"
 
-domelementtype@^2.0.1:
-  version "2.2.0"
-  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/domelementtype/-/domelementtype-2.2.0.tgz"
-  integrity sha1-mgtsJ4LtahxzI9QiZxg9+b2LHVc=
-
-domelementtype@^2.2.0:
+domelementtype@^2.0.1, domelementtype@^2.2.0:
   version "2.3.0"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/domelementtype/-/domelementtype-2.3.0.tgz"
   integrity sha512-OLETBj6w0OsagBwdXnPdN0cnMfF9opN69co+7ZrbfPGrdpPVNBUj02spi6B1N7wChLQiPn4CSH/zJvXw56gmHw==
@@ -3941,16 +3943,7 @@ domutils@^1.7.0:
     dom-serializer "0"
     domelementtype "1"
 
-domutils@^2.5.2:
-  version "2.8.0"
-  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/domutils/-/domutils-2.8.0.tgz"
-  integrity sha512-w96Cjofp72M5IIhpjgobBimYEfoPjx1Vx0BSX9P30WBdZW2WIKU0T1Bd0kz2eNZ9ikjKgHbEyKx8BB6H1L3h3A==
-  dependencies:
-    dom-serializer "^1.0.1"
-    domelementtype "^2.2.0"
-    domhandler "^4.2.0"
-
-domutils@^2.8.0:
+domutils@^2.5.2, domutils@^2.8.0:
   version "2.8.0"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/domutils/-/domutils-2.8.0.tgz"
   integrity sha512-w96Cjofp72M5IIhpjgobBimYEfoPjx1Vx0BSX9P30WBdZW2WIKU0T1Bd0kz2eNZ9ikjKgHbEyKx8BB6H1L3h3A==
@@ -4145,6 +4138,21 @@ es-errors@^1.3.0:
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/es-errors/-/es-errors-1.3.0.tgz"
   integrity sha512-Zf5H2Kxt2xjTvbJvP2ZWLEICxA6j+hAmMzIlypy4xcBg1vKVnx89Wy0GbS+kf5cwCVFFzdCFh2XSCFNULS6csw==
 
+es-get-iterator@^1.1.3:
+  version "1.1.3"
+  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/es-get-iterator/-/es-get-iterator-1.1.3.tgz"
+  integrity sha512-sPZmqHBe6JIiTfN5q2pEi//TwxmAFHwj/XEuYjTuse78i8KxaqMTTzxPoFKuzRpDpTJ+0NAbpfenkmH2rePtuw==
+  dependencies:
+    call-bind "^1.0.2"
+    get-intrinsic "^1.1.3"
+    has-symbols "^1.0.3"
+    is-arguments "^1.1.1"
+    is-map "^2.0.2"
+    is-set "^2.0.2"
+    is-string "^1.0.7"
+    isarray "^2.0.5"
+    stop-iteration-iterator "^1.0.0"
+
 es-iterator-helpers@^1.2.1:
   version "1.2.1"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/es-iterator-helpers/-/es-iterator-helpers-1.2.1.tgz"
@@ -4241,7 +4249,7 @@ escodegen@^2.0.0:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-config-react-app@^7.0.0:
+eslint-config-react-app@^7.0.1:
   version "7.0.1"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/eslint-config-react-app/-/eslint-config-react-app-7.0.1.tgz"
   integrity sha512-K6rNzvkIeHaTd8m/QEh1Zko0KI7BACWkkneSs6s9cKZC/J27X3eZR6Upt1jkmZ/4FK+XUOPPxMEN7+lbUXfSlA==
@@ -4879,7 +4887,7 @@ get-caller-file@^2.0.5:
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/get-caller-file/-/get-caller-file-2.0.5.tgz"
   integrity sha512-DyFP3BM/3YHTQOCUL/w0OZHR0lpKeGrxotcHWcqNEdnltqFwXVfhEBQ94eIo34AfQpo0rGki4cyIiftY06h2Fg==
 
-get-intrinsic@^1.2.4, get-intrinsic@^1.2.5, get-intrinsic@^1.2.6, get-intrinsic@^1.2.7, get-intrinsic@^1.3.0:
+get-intrinsic@^1.1.3, get-intrinsic@^1.2.2, get-intrinsic@^1.2.4, get-intrinsic@^1.2.5, get-intrinsic@^1.2.6, get-intrinsic@^1.2.7, get-intrinsic@^1.3.0:
   version "1.3.0"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/get-intrinsic/-/get-intrinsic-1.3.0.tgz"
   integrity sha512-9fSjSaos/fRIVIp+xSJlE6lfwhES7LNtKaCBIamHsjr2na1BiABJPo0mOjjz8GJDURarmCPGqaiVg5mfjb98CQ==
@@ -5110,11 +5118,6 @@ he@^1.2.0:
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/he/-/he-1.2.0.tgz"
   integrity sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
 
-hi-base32@^0.5.0:
-  version "0.5.1"
-  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/hi-base32/-/hi-base32-0.5.1.tgz"
-  integrity sha1-Enny3a4mcyGepYcMISHSozEyhX4=
-
 hoopy@^0.1.4:
   version "0.1.4"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/hoopy/-/hoopy-0.1.4.tgz"
@@ -5329,7 +5332,7 @@ inflight@^1.0.4:
     once "^1.3.0"
     wrappy "1"
 
-inherits@^2.0.1, inherits@^2.0.3, inherits@^2.0.4, inherits@~2.0.3, inherits@2, inherits@2.0.4:
+inherits@^2.0.1, inherits@^2.0.3, inherits@~2.0.3, inherits@2, inherits@2.0.4:
   version "2.0.4"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/inherits/-/inherits-2.0.4.tgz"
   integrity sha1-D6LGT5MpF8NDOg3tVTY6rjdBa3w=
@@ -5363,7 +5366,15 @@ ipaddr.js@1.9.1:
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/ipaddr.js/-/ipaddr.js-1.9.1.tgz"
   integrity sha512-0KI/607xoxSToH7GjN1FfSbLoU0+btTicjsQSWQlh/hZykN8KpmMf7uYwPW3R+akZ6R/w18ZlXSHBYXiYUPO3g==
 
-is-array-buffer@^3.0.4, is-array-buffer@^3.0.5:
+is-arguments@^1.1.1:
+  version "1.2.0"
+  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/is-arguments/-/is-arguments-1.2.0.tgz"
+  integrity sha512-7bVbi0huj/wrIAOzb8U1aszg9kdi3KN/CyU19CTI7tAoZYEZoL9yCDXpbXN+uPsuWnP02cyug1gleqq+TU+YCA==
+  dependencies:
+    call-bound "^1.0.2"
+    has-tostringtag "^1.0.2"
+
+is-array-buffer@^3.0.2, is-array-buffer@^3.0.4, is-array-buffer@^3.0.5:
   version "3.0.5"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/is-array-buffer/-/is-array-buffer-3.0.5.tgz"
   integrity sha512-DDfANUiiG2wC1qawP66qlTugJeL5HyzMpfr8lLK+jMQirGzNod0B12cFB/9q838Ru27sBwfw78/rdoU7RERz6A==
@@ -5483,7 +5494,7 @@ is-glob@^4.0.0, is-glob@^4.0.1, is-glob@^4.0.3, is-glob@~4.0.1:
   dependencies:
     is-extglob "^2.1.1"
 
-is-map@^2.0.3:
+is-map@^2.0.2, is-map@^2.0.3:
   version "2.0.3"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/is-map/-/is-map-2.0.3.tgz"
   integrity sha512-1Qed0/Hr2m+YqxnM09CjA2d/i6YZNfF6R2oRAOj36eUdS6qIV/huPJNSEpKbupewFs+ZsJlxsjjPbc0/afW6Lw==
@@ -5531,7 +5542,7 @@ is-potential-custom-element-name@^1.0.1:
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/is-potential-custom-element-name/-/is-potential-custom-element-name-1.0.1.tgz"
   integrity sha512-bCYeRA2rVibKZd+s2625gGnGF/t7DSqDs4dP7CrLA1m7jKWz6pps0LpYLJN8Q64HtmPKJ1hrN3nzPNKFEKOUiQ==
 
-is-regex@^1.2.1:
+is-regex@^1.1.4, is-regex@^1.2.1:
   version "1.2.1"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/is-regex/-/is-regex-1.2.1.tgz"
   integrity sha512-MjYsKHO5O7mCsmRGxWcLWheFqN9DJ/2TmngvjKXihe6efViPqc274+Fx/4fYj/r03+ESvBdTXK0V6tA3rgez1g==
@@ -5551,12 +5562,12 @@ is-root@^2.1.0:
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/is-root/-/is-root-2.1.0.tgz"
   integrity sha512-AGOriNp96vNBd3HtU+RzFEc75FfR5ymiYv8E553I71SCeXBiMsVDUtdio1OEFvrPyLIQ9tVR5RxXIFe5PUFjMg==
 
-is-set@^2.0.3:
+is-set@^2.0.2, is-set@^2.0.3:
   version "2.0.3"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/is-set/-/is-set-2.0.3.tgz"
   integrity sha512-iPAjerrse27/ygGLxw+EBR9agv9Y6uLeYVJMu+QNCoouJ1/1ri0mGrcWpfCqFZuzzx3WjtwxG098X+n4OuRkPg==
 
-is-shared-array-buffer@^1.0.4:
+is-shared-array-buffer@^1.0.2, is-shared-array-buffer@^1.0.4:
   version "1.0.4"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/is-shared-array-buffer/-/is-shared-array-buffer-1.0.4.tgz"
   integrity sha512-ISWac8drv4ZGfwKl5slpHG9OwPNty4jOWPRIhBpxOoD+hqITiwuipOQ2bNthAzwA3B4fIjO4Nln74N0S9byq8A==
@@ -5568,7 +5579,7 @@ is-stream@^2.0.0:
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/is-stream/-/is-stream-2.0.1.tgz"
   integrity sha512-hFoiJiTl63nn+kstHGBtewWSKnQLpyb155KHheA1l39uvtO9nWIop1p3udqPcUd/xbF1VLMO4n7OI6p7RbngDg==
 
-is-string@^1.1.1:
+is-string@^1.0.7, is-string@^1.1.1:
   version "1.1.1"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/is-string/-/is-string-1.1.1.tgz"
   integrity sha512-BtEeSsoaQjlSPBemMQIrY1MY0uM6vnS1g5fmufYOtnxLGUZM2178PKbhsk7Ffv58IX+ZtcvoGwccYsh0PglkAA==
@@ -6407,16 +6418,7 @@ loader-runner@^4.2.0:
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/loader-runner/-/loader-runner-4.3.0.tgz"
   integrity sha512-3R/1M+yS3j5ou80Me59j7F9IMs4PXs3VqRrm0TU3AbKPxlmpoY1TNscJV/oGJXo8qCatFGTfDbY6W6ipGOYXfg==
 
-loader-utils@^2.0.0:
-  version "2.0.2"
-  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/loader-utils/-/loader-utils-2.0.2.tgz"
-  integrity sha1-1uO0+4GHByGuTghoqxHdY4NowSk=
-  dependencies:
-    big.js "^5.2.2"
-    emojis-list "^3.0.0"
-    json5 "^2.1.2"
-
-loader-utils@^2.0.4:
+loader-utils@^2.0.0, loader-utils@^2.0.4:
   version "2.0.4"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/loader-utils/-/loader-utils-2.0.4.tgz"
   integrity sha512-xXqpXoINfFhgua9xiqD8fPFHgkoq1mmmpE92WlDbm9rNRd/EbRb+Gqf908T2DMfuHjjJlksiK2RbHVOdD/MqSw==
@@ -6508,10 +6510,10 @@ lru-cache@^5.1.1:
   dependencies:
     yallist "^3.0.2"
 
-lz-string@^1.4.4:
-  version "1.4.4"
-  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/lz-string/-/lz-string-1.4.4.tgz"
-  integrity sha1-wNjq82BZ9wV5bh40SBHPTEmNOiY=
+lz-string@^1.5.0:
+  version "1.5.0"
+  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/lz-string/-/lz-string-1.5.0.tgz"
+  integrity sha512-h5bgJWpxJNswbU7qCrV0tIKQCaS3blPDrqKWx+QxzuzL1zGUzij9XCWLrSLsJPu5t+eWA/ycetzYAO5IOMcWAQ==
 
 magic-string@^0.25.0, magic-string@^0.25.7:
   version "0.25.9"
@@ -6820,6 +6822,14 @@ object-inspect@^1.13.3, object-inspect@^1.13.4:
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/object-inspect/-/object-inspect-1.13.4.tgz"
   integrity sha512-W67iLl4J2EXEGTbfeHCffrjDfitvLANg0UlX3wFUUSTx92KXRFegMHUVgSqE+wvhAbi4WqjGg9czysTV2Epbew==
 
+object-is@^1.1.5:
+  version "1.1.6"
+  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/object-is/-/object-is-1.1.6.tgz"
+  integrity sha512-F8cZ+KfGlSGi09lJT7/Nd6KJZ9ygtvYC0/UYYLI9nmQKLMnydpB9yvbv9K1uSkEu7FU9vYPmVwLg328tX+ot3Q==
+  dependencies:
+    call-bind "^1.0.7"
+    define-properties "^1.2.1"
+
 object-keys@^1.1.1:
   version "1.1.1"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/object-keys/-/object-keys-1.1.1.tgz"
@@ -7095,7 +7105,7 @@ picocolors@^0.2.1:
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/picocolors/-/picocolors-0.2.1.tgz"
   integrity sha512-cMlDqaLEqfSaW8Z7N5Jw+lyIW869EzT73/F5lhtY9cLGoVxSXznfgfXMO0Z5K0o0Q2TkTXq+0KFsdnSe3jDViA==
 
-picocolors@^1.0.0, picocolors@^1.1.1:
+picocolors@^1.0.0, picocolors@^1.1.1, picocolors@1.1.1:
   version "1.1.1"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/picocolors/-/picocolors-1.1.1.tgz"
   integrity sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==
@@ -7712,20 +7722,10 @@ pretty-error@^4.0.0:
     lodash "^4.17.20"
     renderkid "^3.0.0"
 
-pretty-format@^26.6.2:
-  version "26.6.2"
-  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/pretty-format/-/pretty-format-26.6.2.tgz"
-  integrity sha1-41wnBfFMt/4v6U+geDRbREEg/JM=
-  dependencies:
-    "@jest/types" "^26.6.2"
-    ansi-regex "^5.0.0"
-    ansi-styles "^4.0.0"
-    react-is "^17.0.1"
-
-pretty-format@^27.0.0, pretty-format@^27.5.1:
+pretty-format@^27.0.0, pretty-format@^27.0.2, pretty-format@^27.5.1:
   version "27.5.1"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/pretty-format/-/pretty-format-27.5.1.tgz"
-  integrity sha1-IYGHn96lGnpYUfs52SD6pj8B2I4=
+  integrity sha512-Qb1gy5OrP5+zDf2Bvnzdl3jsTf1qXVMazbvCoKhtKqVs4/YK4ozX4gKQJJVyNe+cajNPn0KoC0MC3FUmaHWEmQ==
   dependencies:
     ansi-regex "^5.0.1"
     ansi-styles "^5.0.0"
@@ -7745,11 +7745,6 @@ process-nextick-args@~2.0.0:
   version "2.0.1"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/process-nextick-args/-/process-nextick-args-2.0.1.tgz"
   integrity sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==
-
-promise-polyfill@^8.2.1:
-  version "8.2.1"
-  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/promise-polyfill/-/promise-polyfill-8.2.1.tgz"
-  integrity sha1-H6lVsyW+5Pa4pDEeGBSNTltG0lQ=
 
 promise@^8.1.0:
   version "8.3.0"
@@ -7858,7 +7853,7 @@ react-app-polyfill@^3.0.0:
     regenerator-runtime "^0.13.9"
     whatwg-fetch "^3.6.2"
 
-react-dev-utils@^12.0.0:
+react-dev-utils@^12.0.1:
   version "12.0.1"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/react-dev-utils/-/react-dev-utils-12.0.1.tgz"
   integrity sha512-84Ivxmr17KjUupyqzFode6xKhjwuEJDROWKJy/BthkL7Wn6NJ8h4WE6k/exAv6ImS+0oZLRRW5j/aINMHyeGeQ==
@@ -7888,14 +7883,13 @@ react-dev-utils@^12.0.0:
     strip-ansi "^6.0.1"
     text-table "^0.2.0"
 
-react-dom@*, react-dom@^17.0.2, react-dom@>=16.3.0:
-  version "17.0.2"
-  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/react-dom/-/react-dom-17.0.2.tgz"
-  integrity sha1-7P+2hF462Nv83EmPDQqTlzZQLCM=
+react-dom@^18.0.0, react-dom@^18.2.0:
+  version "18.3.1"
+  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/react-dom/-/react-dom-18.3.1.tgz"
+  integrity sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==
   dependencies:
     loose-envify "^1.1.0"
-    object-assign "^4.1.1"
-    scheduler "^0.20.2"
+    scheduler "^0.23.2"
 
 react-error-overlay@^6.0.11:
   version "6.1.0"
@@ -7922,10 +7916,10 @@ react-refresh@^0.11.0, "react-refresh@>=0.10.0 <1.0.0":
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/react-refresh/-/react-refresh-0.11.0.tgz"
   integrity sha512-F27qZr8uUqwhWZboondsPx8tnC3Ct3SxZA3V5WyEvujRyyNv0VYPhoBg1gZ8/MV5tubQp76Trw8lTv9hzRBa+A==
 
-react-scripts@5.0.0:
-  version "5.0.0"
-  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/react-scripts/-/react-scripts-5.0.0.tgz"
-  integrity sha512-3i0L2CyIlROz7mxETEdfif6Sfhh9Lfpzi10CtcGs1emDQStmZfWjJbAIMtRD0opVUjQuFWqHZyRZ9PPzKCFxWg==
+react-scripts@5.0.1:
+  version "5.0.1"
+  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/react-scripts/-/react-scripts-5.0.1.tgz"
+  integrity sha512-8VAmEm/ZAwQzJ+GOMLbBsTdDKOpuZh7RPs0UymvBR2vRk4iZWCskjbFnxqjrzoIvlNNRZ3QJFx6/qDSi6zSnaQ==
   dependencies:
     "@babel/core" "^7.16.0"
     "@pmmmwh/react-refresh-webpack-plugin" "^0.5.3"
@@ -7943,7 +7937,7 @@ react-scripts@5.0.0:
     dotenv "^10.0.0"
     dotenv-expand "^5.1.0"
     eslint "^8.3.0"
-    eslint-config-react-app "^7.0.0"
+    eslint-config-react-app "^7.0.1"
     eslint-webpack-plugin "^3.1.1"
     file-loader "^6.2.0"
     fs-extra "^10.0.0"
@@ -7960,7 +7954,7 @@ react-scripts@5.0.0:
     postcss-preset-env "^7.0.1"
     prompts "^2.4.2"
     react-app-polyfill "^3.0.0"
-    react-dev-utils "^12.0.0"
+    react-dev-utils "^12.0.1"
     react-refresh "^0.11.0"
     resolve "^1.20.0"
     resolve-url-loader "^4.0.0"
@@ -7977,13 +7971,12 @@ react-scripts@5.0.0:
   optionalDependencies:
     fsevents "^2.3.2"
 
-react@*, react@^17.0.2, "react@>= 16", react@>=16.3.0, react@17.0.2:
-  version "17.0.2"
-  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/react/-/react-17.0.2.tgz"
-  integrity sha1-0LXMUW0p6z7uOD91tihkz7aAADc=
+react@^18.0.0, react@^18.2.0, react@^18.3.1, "react@>= 16":
+  version "18.3.1"
+  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/react/-/react-18.3.1.tgz"
+  integrity sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==
   dependencies:
     loose-envify "^1.1.0"
-    object-assign "^4.1.1"
 
 read-cache@^1.0.0:
   version "1.0.0"
@@ -8079,7 +8072,7 @@ regex-parser@^2.2.11:
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/regex-parser/-/regex-parser-2.3.1.tgz"
   integrity sha512-yXLRqatcCuKtVHsWrNg0JL3l1zGfdXeEvDa0bdu4tCDQw0RpMDZsqbkyRTUnKMR0tXF627V2oEWjBEaEdqTwtQ==
 
-regexp.prototype.flags@^1.5.3, regexp.prototype.flags@^1.5.4:
+regexp.prototype.flags@^1.5.1, regexp.prototype.flags@^1.5.3, regexp.prototype.flags@^1.5.4:
   version "1.5.4"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/regexp.prototype.flags/-/regexp.prototype.flags-1.5.4.tgz"
   integrity sha512-dYqgNSZbDwkaJ2ceRd9ojCGjBq+mOm9LmtXnAnEGyHhN/5R7iDW2TRw3h+o/jCFxus3P2LfWIIiwowAjANm7IA==
@@ -8306,13 +8299,12 @@ saxes@^5.0.1:
   dependencies:
     xmlchars "^2.2.0"
 
-scheduler@^0.20.2:
-  version "0.20.2"
-  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/scheduler/-/scheduler-0.20.2.tgz"
-  integrity sha1-S67jlDbjSqk7SHS93L8P6Li1DpE=
+scheduler@^0.23.2:
+  version "0.23.2"
+  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/scheduler/-/scheduler-0.23.2.tgz"
+  integrity sha512-UOShsPwz7NrMUqhR6t0hWjFduvOzbtv7toDH1/hIrfRNIDBnnBWd0CwJTGvTpngVlmwGCdP9/Zl/tVrDqcuYzQ==
   dependencies:
     loose-envify "^1.1.0"
-    object-assign "^4.1.1"
 
 schema-utils@^2.6.5:
   version "2.7.1"
@@ -8542,7 +8534,7 @@ side-channel-weakmap@^1.0.2:
     object-inspect "^1.13.3"
     side-channel-map "^1.0.1"
 
-side-channel@^1.0.6, side-channel@^1.1.0:
+side-channel@^1.0.4, side-channel@^1.0.6, side-channel@^1.1.0:
   version "1.1.0"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/side-channel/-/side-channel-1.1.0.tgz"
   integrity sha512-ZX99e6tRweoUXqR+VBrslhda51Nh5MTQwou5tnUDgbtyM0dBgmhEDtWGP/xbKn6hqfPRHujUNwz5fy/wbbhnpw==
@@ -8605,14 +8597,6 @@ source-map-loader@^3.0.0:
     abab "^2.0.5"
     iconv-lite "^0.6.3"
     source-map-js "^1.0.1"
-
-source-map-resolve@^0.6.0:
-  version "0.6.0"
-  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/source-map-resolve/-/source-map-resolve-0.6.0.tgz"
-  integrity sha1-PZ34fiNrU/FtAeWBUPx3EROOXtI=
-  dependencies:
-    atob "^2.1.2"
-    decode-uri-component "^0.2.0"
 
 source-map-support@^0.5.6, source-map-support@~0.5.20:
   version "0.5.21"
@@ -8714,7 +8698,7 @@ statuses@2.0.1:
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/statuses/-/statuses-2.0.1.tgz"
   integrity sha512-RwNA9Z/7PrK06rYLIzFMlaF+l73iwpzsqRIFgbMLbTcLD6cOao82TaWefPXQvB2fOC4AjuYSEndS7N/mTCbkdQ==
 
-stop-iteration-iterator@^1.1.0:
+stop-iteration-iterator@^1.0.0, stop-iteration-iterator@^1.1.0:
   version "1.1.0"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/stop-iteration-iterator/-/stop-iteration-iterator-1.1.0.tgz"
   integrity sha512-eLoXW/DHyl62zxY4SCaIgnRhuMr6ri4juEYARS8E6sCEqzKpOiE521Ucofdx+KnDZl5xmvGYaaKCk5FEOxJCoQ==
@@ -9301,7 +9285,7 @@ typedarray-to-buffer@^3.1.5:
   dependencies:
     is-typedarray "^1.0.0"
 
-"typescript@^3.2.1 || ^4", typescript@^5.9.2, "typescript@>= 2.7", "typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta":
+"typescript@^3.2.1 || ^4", typescript@^5.6.3, "typescript@>= 2.7", "typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta":
   version "5.9.2"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/typescript/-/typescript-5.9.2.tgz"
   integrity sha512-CWBzXQrc/qOkhidw1OzBTQuYRbfyxDXJMVJ1XNwUHGROVmuaeiEm3OslpZ1RV96d7SKKjZKrSJu3+t/xlw3R9A==
@@ -9474,10 +9458,10 @@ wbuf@^1.1.0, wbuf@^1.7.3:
   dependencies:
     minimalistic-assert "^1.0.0"
 
-web-vitals@^1.0.1:
-  version "1.1.2"
-  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/web-vitals/-/web-vitals-1.1.2.tgz"
-  integrity sha1-BlNTCBaJhgliOaqEcW5otMaubRw=
+web-vitals@^2.1.4:
+  version "2.1.4"
+  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/web-vitals/-/web-vitals-2.1.4.tgz"
+  integrity sha512-sVWcwhU5mX6crfI5Vd2dC4qchyTqxV8URinzt25XqVh+bHEPGH4C3NPrNionCP7Obx59wrYEbNlw4Z8sjALzZg==
 
 webidl-conversions@^4.0.2:
   version "4.0.2"
@@ -9650,7 +9634,7 @@ whatwg-url@^8.0.0, whatwg-url@^8.5.0:
     tr46 "^2.1.0"
     webidl-conversions "^6.1.0"
 
-which-boxed-primitive@^1.1.0, which-boxed-primitive@^1.1.1:
+which-boxed-primitive@^1.0.2, which-boxed-primitive@^1.1.0, which-boxed-primitive@^1.1.1:
   version "1.1.1"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/which-boxed-primitive/-/which-boxed-primitive-1.1.1.tgz"
   integrity sha512-TbX3mj8n0odCBFVlY8AxkqcHASw3L60jIuF8jFP78az3C2YhmGvqbHBpAjTRH2/xqYunrJ9g1jSyjCjpoWzIAA==
@@ -9680,7 +9664,7 @@ which-builtin-type@^1.2.1:
     which-collection "^1.0.2"
     which-typed-array "^1.1.16"
 
-which-collection@^1.0.2:
+which-collection@^1.0.1, which-collection@^1.0.2:
   version "1.0.2"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/which-collection/-/which-collection-1.0.2.tgz"
   integrity sha512-K4jVyjnBdgvc86Y6BkaLZEN933SwYOuBFkdmBu9ZfkcAbdVbpITnDmjvZ/aQjRXQrv5EPkTnD1s39GiiqbngCw==
@@ -9690,7 +9674,7 @@ which-collection@^1.0.2:
     is-weakmap "^2.0.2"
     is-weakset "^2.0.3"
 
-which-typed-array@^1.1.16, which-typed-array@^1.1.19:
+which-typed-array@^1.1.13, which-typed-array@^1.1.16, which-typed-array@^1.1.19:
   version "1.1.19"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/which-typed-array/-/which-typed-array-1.1.19.tgz"
   integrity sha512-rEvr90Bck4WZt9HHFC4DJMsjvu7x+r6bImz0/BrbWb7A2djJ8hnZMrWnHo9F8ssv0OMErasDhftrfROTyqSDrw==
@@ -9995,8 +9979,3 @@ yocto-queue@^0.1.0:
   version "0.1.0"
   resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/yocto-queue/-/yocto-queue-0.1.0.tgz"
   integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
-
-zalgo-promise@^1.0.11, zalgo-promise@^1.0.28:
-  version "1.0.48"
-  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/zalgo-promise/-/zalgo-promise-1.0.48.tgz"
-  integrity sha1-njPu9QLV7Z9aCfxXKMgzw+h6+i4=
