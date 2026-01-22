@@ -1,9 +1,10 @@
+import React from 'react';
 import { PayPalScriptProvider } from '@paypal/react-paypal-js';
 import logo from './logo.svg';
 import './App.css';
 import Checkout from './Checkout';
 
-function App() {
+const App: React.FC = () => {
   const CLIENT_ID = 'test';
 
   return (
