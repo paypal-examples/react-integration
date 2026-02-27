@@ -1,24 +1,19 @@
 import React from 'react';
-import { PayPalScriptProvider } from '@paypal/react-paypal-js';
 import logo from './logo.svg';
 import './App.css';
 import Checkout from './Checkout';
 
 const App: React.FC = () => {
-  const CLIENT_ID = 'test';
-
   return (
-    <PayPalScriptProvider options={{ "client-id": CLIENT_ID }}>
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Buy an atom!
+          PayPal SDK V5 vs V6 Comparison Demo
         </p>
-      <Checkout />
+        <Checkout />
       </header>
     </div>
-    </PayPalScriptProvider>
   );
 }
 
