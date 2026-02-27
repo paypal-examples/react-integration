@@ -16,7 +16,11 @@ import {
 } from '@paypal/react-paypal-js/sdk-v6';
 import { PayPalButtons, PayPalScriptProvider } from '@paypal/react-paypal-js';
 
-const CLIENT_ID = 'ASl9e-zXs-g68XtcbP9CszFbhX-juWzH1AulD-89qS6Z5wEnKfkP0SIecYE02Sq5VNpvr7ktncWOL5AG';
+const CLIENT_ID = process.env.REACT_APP_PAYPAL_CLIENT_ID || '';
+
+if (!CLIENT_ID) {
+  console.error('REACT_APP_PAYPAL_CLIENT_ID is not defined in environment variables');
+}
 
 const V6Section: React.FC = () => {
   const { isHydrated, error, loadingStatus } = usePayPal();
@@ -41,7 +45,7 @@ const V6Section: React.FC = () => {
             body: JSON.stringify({
               cart: [
                 {
-                  sku: '3xk9m4n2', // Official Baseball - $10.00
+                  sku: '3xk9m4n2',
                   quantity: 1,
                 },
               ],
@@ -244,7 +248,7 @@ const Checkout: React.FC = () => {
         }
 
         const data = await response.json();
-        return data.id; // V5 expects just the ID string
+        return data.id; 
       } catch (err) {
         console.error('Error creating order:', err);
         throw err;

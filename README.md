@@ -13,7 +13,13 @@ cd react-integration
 npm install
 ```
 
-...log in to the [developer dashboard](https://www.paypal.com/signin?returnUri=https%3A%2F%2Fdeveloper.paypal.com%2Fdeveloper%2Fapplications) and get your client ID from your default application. Change `const CLIENT_ID = 'test';` in _src/App.js_ so CLIENT_ID matches your sandbox client ID...
+...set up your environment variables by creating a `.env.local` file:
+
+```bash
+cp .env.example .env.local
+```
+
+...then log in to the [developer dashboard](https://www.paypal.com/signin?returnUri=https%3A%2F%2Fdeveloper.paypal.com%2Fdeveloper%2Fapplications) and get your client ID from your default application. Update the `REACT_APP_PAYPAL_CLIENT_ID` value in `.env.local` with your sandbox client ID...
 
 > If you need help setting up your developer dashboard or finding your client ID, follow the first step in the getting started documentation to [get API credentials](https://developer.paypal.com/docs/business/get-started/#get-api-credentials)
 
