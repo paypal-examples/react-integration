@@ -1546,19 +1546,19 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@paypal/paypal-js@^9.3.0":
-  version "9.3.0"
-  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@paypal/paypal-js/-/paypal-js-9.3.0.tgz"
-  integrity sha512-2PJ9xIH+RaBJzU9RXpzq/wqCLyjPknQXj01Vknwv+b8Kq294+2Yw7QVLPeQw+EC/vG2wqxKU7ENPupTe3MeouQ==
+"@paypal/paypal-js@^9.4.0":
+  version "9.4.0"
+  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@paypal/paypal-js/-/paypal-js-9.4.0.tgz"
+  integrity sha512-iPJIkEgzuUt9AW9d41xcltLYdcJvQ0qf+wWWuJ+wnJYnx4H6Yf1Pm98eBRnTNej4XHMSEDDb33ERsB4v/siORQ==
   dependencies:
     promise-polyfill "^8.3.0"
 
-"@paypal/react-paypal-js@9.0.0":
-  version "9.0.0"
-  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@paypal/react-paypal-js/-/react-paypal-js-9.0.0.tgz"
-  integrity sha512-6Ei9fVVMWigRyYMteFf1ENHZolrT5bVfwLqI6WNlX7jAotI8326JN54nqOHLLeQwV9WNd8f+T7/Owom9RrBqbQ==
+"@paypal/react-paypal-js@9.0.1":
+  version "9.0.1"
+  resolved "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/api/npm/npm-all/@paypal/react-paypal-js/-/react-paypal-js-9.0.1.tgz"
+  integrity sha512-cqX0l0wSOlWlovH0dnbVksZNfkoVxoQ5qYSoOQrqiXyibgrNCNT+loYqQ26F3rdCz+qPEQwf4+euKxgw8M1bNQ==
   dependencies:
-    "@paypal/paypal-js" "^9.3.0"
+    "@paypal/paypal-js" "^9.4.0"
     "@paypal/sdk-constants" "^1.0.122"
     server-only "^0.0.1"
 
